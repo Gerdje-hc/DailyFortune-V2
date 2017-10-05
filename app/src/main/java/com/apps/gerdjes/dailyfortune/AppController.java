@@ -1,16 +1,11 @@
-package lab.androidatc.dailyfortune.app;
+package com.apps.gerdjes.dailyfortune;
 
 import android.app.Application;
-import android.app.DownloadManager;
-import android.app.VoiceInteractor;
-import android.content.Intent;
 import android.text.TextUtils;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
-
-import static android.R.attr.tag;
 
 /**
  * Created by vdabcursist on 04/10/2017.
@@ -26,7 +21,6 @@ public class AppController extends Application {
     public static synchronized AppController getInstance() {
         return mInstance;
     }
-
     private RequestQueue mRequestQueue;
 
     @Override
